@@ -12,6 +12,7 @@ netto_renteIntægter = df1.iloc[0,1]
 resultat_før_skat = df1.iloc[11,1]
 resultat_før_skat = Danske_Nummer(resultat_før_skat)
 netto_renteIntægter = Danske_Nummer(netto_renteIntægter)
-omskæringsgrad = netto_renteIntægter
+omskæringsgrad = netto_renteIntægter-resultat_før_skat
 omskæringsgrad = omskæringsgrad/resultat_før_skat
+omskæringsgrad = omskæringsgrad*100
 print(omskæringsgrad)
